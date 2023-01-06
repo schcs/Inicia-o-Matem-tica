@@ -8,7 +8,7 @@ Conjuntos são objetos básicos na matemática. A teoria dos conjuntos foi desen
 
 Um *conjunto* $A$ é uma coleção de objetos. Se $x$ é um objeto que pertence ao conjunto $A$, então escrevemos que $x\in A$. Se $x$ não pertence a $A$, então escreve-se que $x\not\in A$. Para um conjunto ser bem definido, é necessário que para qualquer objeto $x$ seja possível decidir se $x\in A$ ou $x\not\in A$. Nós vamos considerar apenas conjuntos de objetos de matemática (tais como números, funções, etc). Muitos textos gostam de citar exemplos de conjuntos de objetos cotadianos, mas estes conjuntos normalmente não satisfazem o critério de ser bem definido. Por exemplo, se queremos considerar o conjunto $X$ de alunos da UFMG, não é claro se o mesmo inclui os alunos que estão em trancamento, os pesquisadores de pós-doutorado, os alunos que não frequentam disciplinas, etc. Para evitar estas ambiguidades, vamos considerar apenas conjuntos que contêm objetos matemáticos.
 
-Exemplos \label{ex:conjuntos}
+Exemplos $\label{ex:conjuntos}$
 
 :   - Podemos considerar por exemplo o conjunto $X=\{1,2,3,4,5\}$. Neste caso $1\in X$, mas $-1\not\in X$. 
 - Pode-se também considerar o conjunto $\mathbb N$ dos números naturais. Temos que $\N=\{1,2,3,\ldots\}$. Em particular, $2\in\N$, mas $-1\not\in\N$. Nós também não vamos considerar zero como natural, então $0\not\in \N$. 
