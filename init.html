@@ -1,0 +1,44 @@
+<h1 id="iniciação-à-matemática">Iniciação à Matemática</h1>
+<h2 id="programa">Programa</h2>
+<ul>
+<li><a href="conjuntos.md">Conjuntos</a></li>
+<li>Operações entre conjuntos: união, interseção, diferença</li>
+<li>Sentenças, quantificadores, negação, recíproca</li>
+<li>Produto cartesiano</li>
+<li>Relações</li>
+<li>Relações de equivalência</li>
+<li>Ordem parcial, ordem total</li>
+<li>Funções, aplicações</li>
+<li>Números naturais, os Axiomas de Peano</li>
+<li>As operações entre naturais</li>
+<li>Cardinalidade de conjuntos</li>
+<li>Conjuntos finitos, enumeráveis, e não enuveráveis</li>
+<li>Números inteiros</li>
+<li>Números racionais</li>
+<li>Números reais</li>
+<li>Números complexos</li>
+</ul>
+<h1 id="conjuntos">Conjuntos</h1>
+<h2 id="definir-conjuntos">Definir conjuntos</h2>
+<p>Conjuntos são objetos básicos na matemática. A teoria dos conjuntos foi desenvolvido a partir do final do século XIX por matemáticos tais como Cantor, Hilbert, Zorn, Zermelo e Fraenkel. A teoria rigorosa dos conjuntos é um assunto avançado que nós não vamos abordar nesta disciplina. O que nós vamos estudar neste semestre é chamado “Teoria Ingênua dos Conjuntos”. Para estudar matemática moderna e avançada, esta teoria não é suficiente, mas ela serve para introduzir os conceitos básicos e fundamentar os estudos nas disciplinas da graduação.</p>
+<p>Um <em>conjunto</em> <span class="math inline"><em>A</em></span> é uma coleção de objetos. Se <span class="math inline"><em>x</em></span> é um objeto que pertence ao conjunto <span class="math inline"><em>A</em></span>, então escrevemos que <span class="math inline"><em>x</em> ∈ <em>A</em></span>. Se <span class="math inline"><em>x</em></span> não pertence a <span class="math inline"><em>A</em></span>, então escreve-se que <span class="math inline"><em>x</em> ∉ <em>A</em></span>. Para um conjunto ser bem definido, é necessário que para qualquer objeto <span class="math inline"><em>x</em></span> seja possível decidir se <span class="math inline"><em>x</em> ∈ <em>A</em></span> ou <span class="math inline"><em>x</em> ∉ <em>A</em></span>. Nós vamos considerar apenas conjuntos de objetos de matemática (tais como números, funções, etc). Muitos textos gostam de citar exemplos de conjuntos de objetos cotadianos, mas estes conjuntos normalmente não satisfazem o critério de ser bem definido. Por exemplo, se queremos considerar o conjunto <span class="math inline"><em>X</em></span> de alunos da UFMG, não é claro se o mesmo inclui os alunos que estão em trancamento, os pesquisadores de pós-doutorado, os alunos que não frequentam disciplinas, etc. Para evitar estas ambiguidades, vamos considerar apenas conjuntos que contêm objetos matemáticos.</p>
+<div class="thm">
+<p><strong>Exemplos</strong> <span class="math inline"></span> - Podemos considerar por exemplo o conjunto <span class="math inline"><em>X</em> = {1, 2, 3, 4, 5}</span>. Neste caso <span class="math inline">1 ∈ <em>X</em></span>, mas <span class="math inline"> − 1 ∉ <em>X</em></span>. - Pode-se também considerar o conjunto <span class="math inline">ℕ</span> dos números naturais. Temos que <span class="math inline">ℕ = {1, 2, 3, …}</span>. Em particular, <span class="math inline">2 ∈ ℕ</span>, mas <span class="math inline"> − 1 ∉ ℕ</span>. Nós também não vamos considerar zero como natural, então <span class="math inline">0 ∉ ℕ</span>.</p>
+</div>
+<p>Note que o uso do símbolo <span class="math inline">…</span> está usado no segundo exemplo. Normalmente, este símbolo deve ser evitado, pois pode introduzir ambiguidade desnecessária. Por exemplo, se escrevemos que <span class="math inline"><em>X</em> = {2, 5, 8, 12, …}</span>, então não se sabe se <span class="math inline">15 ∈ <em>X</em></span> ou <span class="math inline">15 ∉ <em>X</em></span>. No entanto, em alguns casos quando o significado está absolutamente claro, permitimos o uso de <span class="math inline">…</span>.</p>
+<p>Conjuntos podem ser definidos também como uma coleção de elementos em um conjunto maior. Por exemplo, seja <br /><span class="math display"><em>X</em> = {<em>n</em> ∈ ℕ ∣ <em>n</em> é múltipo de 2}.</span><br /> Em outras palávras, <span class="math inline"><em>X</em></span> é o conjunto dos números naturais pares. Note que a definição de <span class="math inline"><em>X</em></span> tem duas partes. Na primeira parte ``<span class="math inline"><em>n</em> ∈ ℕ</span>’’, nós indicamos que os elementos de <span class="math inline"><em>X</em></span> serão elementos de <span class="math inline">ℕ</span>, enquanto na segunda parte, especificamos quais elementos de <span class="math inline">ℕ</span> serão elementos de <span class="math inline"><em>X</em></span>. Neste caso, os elementos de <span class="math inline"><em>X</em></span> são os elementos de <span class="math inline">ℕ</span> qua são múltiplos de <span class="math inline">2</span>.</p>
+<p>Existe um conjunto que não possui elementos. Este conjunto é chamado de <em>conjunto vazio</em> e é denotado por <span class="math inline">∅</span>. Por definição <span class="math inline"><em>x</em> ∉ ∅</span> para todo objeto <span class="math inline"><em>x</em></span>.</p>
+<h2 id="subconjuntos">Subconjuntos</h2>
+<div class="def">
+<p><strong>Definição.</strong> Assuma que <span class="math inline"><em>A</em></span> e <span class="math inline"><em>B</em></span> são conjuntos. Dizemos que <span class="math inline"><em>A</em></span> é <em>subconjunto</em> de <span class="math inline"><em>B</em></span>, para todo <span class="math inline"><em>x</em> ∈ <em>A</em></span> temos que <span class="math inline"><em>x</em> ∈ <em>B</em></span>. Em outras palavras, <span class="math inline"><em>x</em> ∈ <em>A</em> ⇒ <em>x</em> ∈ <em>B</em></span>.</p>
+</div>
+<p>Se <span class="math inline"><em>A</em></span> é subconjunto de <span class="math inline"><em>B</em></span>, então escrevemos que <span class="math inline"><em>A</em> ⊆ <em>B</em></span>. Se <span class="math inline"><em>A</em></span> não é subconjunto de <span class="math inline"><em>B</em></span>, então escrevemos que <span class="math inline"><em>A</em> ⊈ <em>B</em></span>.</p>
+<div class="exe">
+<p><strong>Exemplos.</strong> <span class="math inline">{1, 2, 3} ⊆ {1, 2, 3, 4, 5}</span> e <span class="math inline">{1, 2, 3, 4, 5} ⊆ ℕ</span>, mas <span class="math inline">{0, 1, 2} ⊈ ℕ</span>.</p>
+</div>
+<div class="def">
+<p><strong>Definição.</strong> Se <span class="math inline"><em>A</em></span> e <span class="math inline"><em>B</em></span> são conjuntos, então dizemos que <span class="math inline"><em>A</em></span> é <em>igual</em> a <span class="math inline"><em>B</em></span> quando <span class="math inline"><em>A</em> ⊆ <em>B</em></span> e <span class="math inline"><em>B</em> ⊆ <em>A</em></span>.</p>
+</div>
+<p>Se <span class="math inline"><em>A</em></span> é igual a <span class="math inline"><em>B</em></span>, então escrevemos que <span class="math inline"><em>A</em> = <em>B</em></span>. Se <span class="math inline"><em>A</em></span> não é igual a <span class="math inline"><em>B</em></span>, então escreve-se que <span class="math inline"><em>A</em> ≠ <em>B</em></span>.</p>
+<p>Note que <span class="math inline"><em>A</em></span> é igual a <span class="math inline"><em>B</em></span> se <br /><span class="math display"><em>x</em> ∈ <em>A</em> ⇒ <em>x</em> ∈ <em>B</em> e <em>x</em> ∈ <em>B</em> ⇒ <em>x</em> ∈ <em>A</em>.</span><br /></p>
+<p>Quando <span class="math inline"><em>A</em> ⊆ <em>B</em></span> mas <span class="math inline"><em>A</em> ≠ <em>B</em></span>, então escrevemos que <span class="math inline"><em>A</em> ⊂ <em>B</em></span> e dizemos que <span class="math inline"><em>A</em></span> é <em>subconjunto próprio</em> de <span class="math inline"><em>B</em></span>.</p>

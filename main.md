@@ -2,6 +2,7 @@
 
 ## Programa
 
+- [Proposições](prop.md)
 - [Conjuntos](conjuntos.md)
 - Operações entre conjuntos: união, interseção, diferença
 - Sentenças, quantificadores, negação, recíproca

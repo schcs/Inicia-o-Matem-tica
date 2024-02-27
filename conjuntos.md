@@ -30,29 +30,62 @@ header-includes: |
 
 # Conjuntos
 
-## Definir conjuntos
+## Como definir conjuntos
 
-$\newcommand{\N}{\mathbb N}$
+\newcommand{\N}{\mathbb N}
 
-Conjuntos são objetos básicos na matemática. A teoria dos conjuntos foi desenvolvido a partir do final do século XIX por matemáticos tais como Cantor, Hilbert, Zorn, Zermelo e Fraenkel. A teoria rigorosa dos conjuntos é um assunto avançado que nós não vamos abordar nesta disciplina. O que nós vamos estudar neste semestre é chamado "Teoria Ingênua dos Conjuntos". Para estudar matemática moderna e avançada, esta teoria não é suficiente, mas ela serve para introduzir os conceitos básicos e fundamentar os estudos nas disciplinas da graduação.
+Conjuntos são objetos básicos na matemática. A teoria dos conjuntos é um ramo relativamente novo que foi desenvolvido a partir do final do século XIX por matemáticos tais como Cantor, Hilbert, Zorn, Zermelo e Fraenkel. A teoria rigorosa dos conjuntos é um assunto avançado que nós não vamos abordar nesta disciplina. O que nós vamos estudar neste semestre é chamado "Teoria Ingênua dos Conjuntos". Para estudar matemática moderna e avançada, esta teoria não é suficiente, mas ela serve para introduzir os conceitos básicos e fundamentar os estudos nas disciplinas da graduação.
 
 Um *conjunto* $A$ é uma coleção de objetos. Se $x$ é um objeto que pertence ao conjunto $A$, então escrevemos que $x\in A$. Se $x$ não pertence a $A$, então escreve-se que $x\not\in A$. Para um conjunto ser bem definido, é necessário que para qualquer objeto $x$ seja possível decidir se $x\in A$ ou $x\not\in A$. Nós vamos considerar apenas conjuntos de objetos de matemática (tais como números, funções, etc). Muitos textos gostam de citar exemplos de conjuntos de objetos cotadianos, mas estes conjuntos normalmente não satisfazem o critério de ser bem definido. Por exemplo, se queremos considerar o conjunto $X$ de alunos da UFMG, não é claro se o mesmo inclui os alunos que estão em trancamento, os pesquisadores de pós-doutorado, os alunos que não frequentam disciplinas, etc. Para evitar estas ambiguidades, vamos considerar apenas conjuntos que contêm objetos matemáticos.
+
+**Notação**: Conjuntos são delimitados por "$\{$" e "$\}$". Com os conjuntos mais simples, nós listamos os elementos do conjunto entre "$\{$" e "$\}$". Por exemplo, para denotar o conjunto que contém os números $-1$, $2$, $5$, escrevemos $\{-1,2,5\}$. Para denotar conjuntos usaremos principalmente letras maiúsculas. Por exemplo, pode-se escrever $A=\{-1,2,5\}$. No caso de conjuntos infinitos, pode-se usar $\ldots$ se não há ambuguidade. Por exemplo, para denotar o conjunto dos números positivos pares, podemos escrever $B=\{2,4,6,\ldots\}$. Por outro lado, se escrevemos $\{1,2,3,5,\ldots\}$, não se sabe qual conjunto queremos definir.  
+
+Os conjuntos não são ordenados e não contém seus elementos apenas uma vez. Por exemplo, os conjuntos $\{-1,2,5\}$, $\{5,2,-1,2\}$, $\{2,2,-1,-1,5\}$ são todos iguais ao conjunto $\{-1,2,5\}$. Pode acontecer que precisamos "conjuntos" ordenados ou "conjuntos" que contém seus elementos com multiplicidade, mas nestes casos seu professor vai criar um objeto adequado. 
 
 :::{.thm}
 **Exemplos** $\label{ex:conjuntos}$
 - Podemos considerar por exemplo o conjunto $X=\{1,2,3,4,5\}$. Neste caso $1\in X$, mas $-1\not\in X$. 
-- Pode-se também considerar o conjunto $\mathbb N$ dos números naturais. Temos que $\N=\{1,2,3,\ldots\}$. Em particular, $2\in\N$, mas $-1\not\in\N$. Nós também não vamos considerar zero como natural, então $0\not\in \N$. 
+- Pode-se também considerar o conjunto $\N$ dos números naturais. Temos que $\N=\{1,2,3,\ldots\}$. Em particular, $2\in\N$, mas $-1\not\in\N$. Nós também não vamos considerar zero como natural, então $0\not\in \N$. 
 :::
 
-Note que o uso do símbolo $\ldots$ está usado no segundo exemplo. Normalmente, este símbolo deve ser evitado, pois pode introduzir  ambiguidade desnecessária. Por exemplo, se escrevemos que $X=\{2,5,8,12,\ldots\}$, então não se sabe se $15\in X$ ou $15\not\in X$. No entanto, em alguns casos quando o significado está absolutamente claro, permitimos o uso de $\ldots$.
+Note que o uso do símbolo $\ldots$ está usado no segundo exemplo. 
 
 Conjuntos podem ser definidos também como uma coleção de elementos em um conjunto maior. Por exemplo, seja
 $$
     X=\{n\in\N\mid \mbox{$n$ é múltipo de $2$}\}.
 $$
-Em outras palávras, $X$ é o conjunto dos números naturais pares. Note que a definição de $X$ tem duas partes. Na primeira parte ``$n\in\N$'', nós indicamos que os elementos de $X$ serão elementos de $\N$, enquanto na segunda parte, especificamos quais elementos de $\N$ serão elementos de $X$. Neste caso, os elementos de $X$ são os elementos de $\N$ qua são múltiplos de $2$.  
+Em outras palávras, $X$ é o conjunto dos números $n$ que pertencem ao conjunto $\N$ e são  pares. Note que a definição de $X$ tem duas partes. Na primeira parte ``$n\in\N$'', nós indicamos que os elementos de $X$ serão elementos de $\N$, enquanto na segunda parte, especificamos quais elementos de $\N$ serão elementos de $X$. Neste caso, os elementos de $X$ são os elementos de $\N$ qua são múltiplos de $2$.  
 
-
+Existe um conjunto que não possui elementos. Este conjunto é chamado de *conjunto vazio* e é denotado por $\emptyset$. Por definição $x\not\in \emptyset$ para todo objeto $x$. O conjunto vazio pode ser escrito também como $\{\}$. 
 
 ## Subconjuntos
+
+:::{.def}
+**Definição.**
+Assuma que $A$ e $B$ são conjuntos. Dizemos que $A$ é *subconjunto* de $B$, para todo $x\in A$ temos que $x\in B$. Em outras palavras, $x\in A\Rightarrow x\in B$. 
+:::
+
+Se $A$ é subconjunto de $B$, então escrevemos que $A\subseteq B$. Se $A$ não é subconjunto de $B$, então escrevemos que $A\not\subseteq B$. 
+
+
+:::{.exe}
+**Exemplos.** $\{1,2,3\}\subseteq \{1,2,3,4,5\}$ e 
+$\{1,2,3,4,5\}\subseteq \N$, mas $\{0,1,2\}\not\subseteq \N$. 
+
+Para todo conjunto $X$, temos que $X\subseteq X$ e  $\emptyset\subseteq X$.
+:::
+
+:::{.def}
+**Definição.** Se $A$ e $B$ são conjuntos, então dizemos que $A$ é *igual* a $B$ quando $A\subseteq B$ e $B\subseteq A$. 
+:::
+
+Se $A$ é igual a $B$, então escrevemos que $A=B$. Se $A$ não é igual a $B$, então escreve-se que $A\neq B$. 
+
+Note que $A$ é igual a $B$ se 
+$$
+x\in A\Rightarrow x\in B\mbox{ e }x\in B\Rightarrow x \in A. 
+$$
+
+Quando $A\subseteq B$ mas $A\neq B$, então escrevemos que $A\subset B$ e dizemos que $A$ é *subconjunto próprio* de $B$. 
+
 
