@@ -2,8 +2,8 @@
 
 ## Programa
 
-- [Proposições](prop.md)
-- [Conjuntos](conjuntos.md)
+- [Proposições](prop.html)
+- [Conjuntos](conjuntos.html)
 - Operações entre conjuntos: união, interseção, diferença
 - Sentenças, quantificadores, negação, recíproca
 - Produto cartesiano
